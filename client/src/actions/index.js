@@ -31,7 +31,7 @@ export function postPokemon (payload) {
 export function getDetail(idPokemon){
     return async function (dispatch) {
         try {
-            const json = await axios(`/${idPokemon}`)
+            const json = await axios(`pokemons/${idPokemon}`)
             return dispatch({
                 type: GET_DETAILS,
                 payload: json.data
