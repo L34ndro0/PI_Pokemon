@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 import Card from "./Card";
 import Paginado from "./Paginado";
 import SearchBar from "./SearchBar";
+import { getPokemons, getTypes } from "../actions";
 import styles from '../styles/home.module.css'
 
 
@@ -25,7 +26,8 @@ export default function Home () {
     }    
     
     useEffect ( () => {                
-        
+        dispatch(getPokemons());
+        dispatch(getTypes());                     
     },[dispatch])
    
   

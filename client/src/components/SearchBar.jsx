@@ -32,7 +32,7 @@ export default function SearchBar () {
     return (
         <div>
             <div>
-                <input type="text" placeholder="Ingrese nombre de pokemon" onChange={event => handleInputChange(event)} value={name}/>
+                <input type="text" placeholder="Busqueda por nombre" onChange={event => handleInputChange(event)} value={name}/>
                 <button className={styles.btn} type='submit' onClick={(event => handleSubmit(event))}>Buscar</button>
                 <button className={styles.btn} type='submit' onClick={(event => handleLimpiar(event))}>Limpiar</button>
             
